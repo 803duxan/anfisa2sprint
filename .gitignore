@@ -130,3 +130,7 @@ dmypy.json
 
 #vscode
 .vscode/
+
+# Data Bases
+*.sqlite
+*.sqlite3
