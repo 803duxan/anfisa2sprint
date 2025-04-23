@@ -4,6 +4,7 @@ from .models import Category, Topping, Wrapper, IceCream
 
 admin.site.empty_value_display = 'Не задано'
 
+
 class IceCreamAdmin(admin.ModelAdmin):
     list_display = (
         'title',
@@ -27,7 +28,6 @@ class IceCreamAdmin(admin.ModelAdmin):
 class IceCreamInline(admin.StackedInline):
     model = IceCream
     extra = 0
-
 
 
 class CategoryAdmin(admin.ModelAdmin):
